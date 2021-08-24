@@ -1,5 +1,5 @@
 # DSMSCN
-**> quoted by https://github.com/I-Hope-Peace/DSMSCN**
+> **quoted by https://github.com/I-Hope-Peace/DSMSCN**
 
 <br>
 
