@@ -1,4 +1,4 @@
-> ### ***quoted by https://github.com/I-Hope-Peace/DSMSCN*** ###
+> #### ***quoted by https://github.com/I-Hope-Peace/DSMSCN*** ###
  - ***해당 깃허브에 공개된 논문 소스코드를 인용하였으며 지도학습 모델 가운데 하나인 FCSD(FC-Siam-Diff) 알고리즘을 활용하였다***
  - ***해
  - ***이후 기본 샘플 데이터셋 이외의 추가적인 데이터셋을 생성하여 해당 알고리즘 (모델에 적용한 학습하고 테스트 데이터를 통해 변화 탐지를 결과를 예측해 보았다.)***
