@@ -9,6 +9,7 @@ dim_x2 =(1568, 896)
 
 path = os.path.dirname(os.path.realpath(__file__)) #현재 파일의 디렉토리 출력
 
+
 ##--------------------------------------------------------------------------##
 path_test = os.path.join(path, "supervised/data/ACD/Szada/test") #test 폴더 경로 출력
 test_listdir = os.listdir(path_test) #['1_gt.bmp', '1_im1.bmp', '1_im2.bmp']
@@ -68,7 +69,6 @@ cv2.imshow('img1', img1)
 
 ##--------------------------------------------------------------------------##
 #편집 영상들을 저장
-
 a = str(datetime.datetime.now())
 md = a[:10]
 path_opencv = os.path.join(path, "supervised/result/ACD/Szada/opencv") #opencv 폴더 경로 출력
