@@ -78,16 +78,6 @@ def train_model():
     best_F1 = 0
     save_best = True
 
-
-    """
-    #fit으로 학습
-    for i in range(len(train_X)):
-        train_1 = np.reshape(train_X[i], (1, train_X[i].shape[0], train_X[i].shape[1], train_X[i].shape[2]))
-        train_2 = np.reshape(train_Y[i], (1, train_Y[i].shape[0], train_Y[i].shape[1], train_Y[i].shape[2]))
-        label = np.reshape(train_label[i], (1, train_label[i].shape[0], train_label[i].shape[1]))
-        deep_model.fit(x=[train_1, train_2], y=label, epochs=MAX_EPOCH, batch_size=BATCH_SZ)
-    """
-
     #"sen": sensitivity(민감도), "spe": specificity(특이도)
     #MAX_EPOCH(200)을 기준으로 반복적으로 학습
     for _epoch in range(MAX_EPOCH):
@@ -170,7 +160,7 @@ def train_model():
             with open(os.path.join(result_path, 'log_best.txt'), 'a+') as f:
                 f.write(info + '\n')
             cv.imwrite(os.path.join(result_path, str(_epoch) + '_bcm.bmp'), binary_change_map)
-            deep_model.save(os.path.join(model_save_path, str(_epoch) + '_model.h5'))
+            deep_model.save_weights(os.path.join(model_save_path, str(_epoch) + '_model.h5'))
             save_best = False
 
     best_info = 'best loss is %.4f, best F1 is %.4f, best acc is %.4f, best kappa is %.4f, ' % (
