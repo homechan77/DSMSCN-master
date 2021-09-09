@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 def read_data_test():
-    path = './DSMSCN-master/supervised/data/ACD/Szada/load_weights_test'
+    path = './data/ACD/Szada/testset'
     test_img_1 = []
     test_img_2 = []
     test_label = []
