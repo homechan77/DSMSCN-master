@@ -1,0 +1,1 @@
+epoch 199, train loss is 0.0561,  train sen is 0.8889, train spe is 0.8655, train F1 is 0.8764, train acc is 0.0884, 

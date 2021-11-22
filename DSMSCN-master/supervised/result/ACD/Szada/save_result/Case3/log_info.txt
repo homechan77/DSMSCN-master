@@ -1,0 +1,4 @@
+test loss is 0.1794,  test sen is 0.3323, test spe is 0.5511, test F1 is 0.4146, test acc is 0.9357, test kappa is 0.3828, 
+confusion matrix is 
+[[2885754   58657]
+ [ 144666   72011]]
